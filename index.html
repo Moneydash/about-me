@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -18,15 +20,16 @@
 </header>
 
 <div class="hero-section">
+    <img src="https://avatars.githubusercontent.com/u/32030277?v=4" alt="Christian Raquid Avatar" class="hero-avatar" width="140" height="140" loading="lazy" aria-label="Profile photo">
     <h1>Christian Raquid</h1>
-    <p>Full Stack Developer with a passion about creating amazing web experiences</p>
-    <p>Software Engineer based on Philippines</p>
+    <p>Full Stack Developer passionate about creating amazing web experiences</p>
+    <p>Software Engineer based in the Philippines</p>
     <a href="#about" class="cta-button" onclick="smoothScroll(event, 'about')">Get Started <span>&#187;</span></a>
-    <a href="https://drive.google.com/file/d/1gYx8wFIHXXxs5xlYUEyuqP8D2R_8j33Q/view?usp=drive_link" class="cta-button">Curriculum Vitae</span></a>
+    <a href="https://drive.google.com/file/d/1gYx8wFIHXXxs5xlYUEyuqP8D2R_8j33Q/view?usp=drive_link" class="cta-button" target="_blank" rel="noopener">Curriculum Vitae</a>
 </div>
 
 <div class="container">
-    <section id="about" class="card">
+    <section id="about" class="card" data-section="about">
         <div class="section-title">
             <h2>About Me</h2>
             <div class="title-underline"></div>
@@ -39,100 +42,114 @@
         </div>
     </section>
 
-    <section id="languages">
+    <section id="languages" data-section="languages">
         <div class="section-title">
             <h2>Languages</h2>
             <p>Programming languages I work with</p>
         </div>
         <div class="skills">
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP logo" class="skill-icon" title="PHP">
                 <div class="skill-name">PHP</div>
+                <div class="skill-exp">4 years</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" class="skill-icon" title="JavaScript">
                 <div class="skill-name">JavaScript</div>
+                <div class="skill-exp">5 years</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" class="skill-icon" title="Java">
                 <div class="skill-name">Java</div>
+                <div class="skill-exp">2 years</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="skill-icon" title="Python">
                 <div class="skill-name">Python</div>
+                <div class="skill-exp">1 year</div>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Python logo" class="skill-icon" title="Python">
+                <div class="skill-name">Typescript</div>
+                <div class="skill-exp">5 months</div>
             </div>
         </div>
     </section>
 
-    <section id="stacks">
+    <section id="stacks" data-section="stacks">
         <div class="section-title">
             <h2>Tech Stacks</h2>
             <p>Tools and frameworks I use to build applications</p>
         </div>
         <div class="skills">
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter logo" class="skill-icon" title="CodeIgniter">
                 <div class="skill-name">CodeIgniter</div>
+                <div class="skill-exp">3 years</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel logo" class="skill-icon" title="Laravel">
                 <div class="skill-name">Laravel</div>
+                <div class="skill-exp">3 years</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask logo" class="skill-icon" title="Flask">
                 <div class="skill-name">Flask</div>
+                <div class="skill-exp">1 year</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot logo" class="skill-icon" title="Spring Boot">
                 <div class="skill-name">Spring Boot</div>
+                <div class="skill-exp">2 years</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS logo" class="skill-icon" title="ReactJS">
                 <div class="skill-name">ReactJS</div>
+                <div class="skill-exp">3 years</div>
             </div>
         </div>
     </section>
 
-    <section id="technologies">
+    <section id="technologies" data-section="technologies">
         <div class="section-title">
             <h2>Technologies</h2>
             <p>Some of other technologies that I also know</p>
         </div>
         <div class="skills">
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL logo" class="skill-icon" title="MySQL">
                 <div class="skill-name">MySQL</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo" class="skill-icon" title="PostgreSQL">
                 <div class="skill-name">PostgreSQL</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" class="skill-icon" title="MongoDB">
                 <div class="skill-name">MongoDB</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker logo" class="skill-icon" title="Docker">
                 <div class="skill-name">Docker</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" class="skill-icon" title="Git">
                 <div class="skill-name">Git</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS logo" class="skill-icon" title="AWS">
                 <div class="skill-name">AWS</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original-wordmark.svg" alt="MariaDB" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original-wordmark.svg" alt="MariaDB logo" class="skill-icon" title="MariaDB">
                 <div class="skill-name">MariaDB</div>
             </div>
             <div class="skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/2164/2164832.png" alt="REST API" class="skill-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/2164/2164832.png" alt="REST API logo" class="skill-icon" title="REST API">
                 <div class="skill-name">REST</div>
             </div>
             <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" class="skill-icon" title="Node.js">
                 <div class="skill-name">Node.js</div>
             </div>
         </div>
@@ -140,7 +157,19 @@
 </div>
 
 <footer>
-    <p>Created by Christian Raquid &nbsp;|&nbsp; <a href="https://github.com/Moneydash" target="_blank">My GitHub Profile</a></p>
+    <p>Created by Christian Raquid &nbsp;|&nbsp;
+        <a href="https://github.com/Moneydash" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="footer-icon" width="22" height="22">
+        </a>
+        <a href="https://www.linkedin.com/in/christianraquid/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="footer-icon" width="22" height="22">
+        </a>
+        <a href="https://www.x.com/kuysraks/" target="_blank" rel="noopener" aria-label="X">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="footer-icon">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+        </a>
+    </p>
 </footer>
 
 <a id="back-to-top" class="back-to-top" onclick="scrollToTop()" title="Back to Top">
