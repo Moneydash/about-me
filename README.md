@@ -23,6 +23,8 @@ Visit the live site: [moneydash.github.io/about-me/](https://moneydash.github.io
 ## 📱 Sections
 - **Hero Section**: Introduction and call-to-action
 - **About**: Professional background and goals
+- **Experience**: Work history timeline with tech used per role
+- **Projects**: Personal projects with descriptions and tech tags
 - **Languages**: Programming languages proficiency
 - **Stack**: Framework expertise
 - **Technologies**: Development tools and databases

@@ -9,7 +9,6 @@
 }
 
 body {
-    padding-top: 40px;
     font-family: 'Poppins', 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -34,6 +33,10 @@ header {
 nav {
     margin: 5px 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 6px;
 }
 
 nav a {
@@ -84,7 +87,7 @@ section.visible {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#languages, #frameworks {
+#languages, #stacks {
     background: transparent;
     box-shadow: none;
     padding: 0;
@@ -396,4 +399,140 @@ html {
 .back-to-top:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* ---------- Experience timeline ---------- */
+.timeline {
+    --line: 3px;   /* timeline line width */
+    --gap: 28px;   /* space between line and cards */
+    --dot: 18px;   /* dot size, border included */
+    position: relative;
+    margin-left: 12px;
+    padding-left: var(--gap);
+    border-left: var(--line) solid rgba(52, 152, 219, 0.25);
+}
+
+.timeline-item {
+    position: relative;
+    background: var(--bg-white);
+    padding: 22px 24px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    /* centers the dot on the line: back across the gap, half the line, half the dot */
+    left: calc(-1 * (var(--gap) + var(--line) / 2 + var(--dot) / 2));
+    top: 26px;
+    width: var(--dot);
+    height: var(--dot);
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), #5dade2);
+    border: 3px solid var(--bg-light);
+}
+
+.timeline-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(44, 62, 80, 0.1);
+}
+
+.timeline-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px 16px;
+}
+
+.timeline-head h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--primary-dark);
+}
+
+.timeline-date {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.timeline-company {
+    margin-top: 4px;
+    font-size: 0.95em;
+    color: var(--primary-light);
+    opacity: 0.85;
+}
+
+.timeline-item p,
+.project p {
+    line-height: 1.7;
+    margin: 12px 0 0;
+    color: #555;
+}
+
+/* ---------- Projects ---------- */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: var(--bg-white);
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(44, 62, 80, 0.1);
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: var(--primary-dark);
+}
+
+.project .tags {
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+/* ---------- Tech tags ---------- */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.tags span {
+    font-size: 0.78em;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(52, 152, 219, 0.08);
+    border: 1px solid rgba(52, 152, 219, 0.2);
+    padding: 4px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+    .container { padding: 16px; }
+    .section-title h2 { font-size: 2em; }
+    .hero-section h1 { font-size: 2.2em; }
+    nav a { margin: 0 8px; font-size: 0.9em; }
+    .timeline { margin-left: 6px; --gap: 20px; }
 }
